@@ -1,0 +1,60 @@
+*{
+ margin:0;
+ padding:0;   
+}
+.imagen{
+    border:2px solid black
+}
+aside{
+    background-color:#4169E1;
+    border: 2px solid black;
+}
+.navegador li{
+    list-style: none;
+    display: inline-block;
+    margin: auto;
+    padding: 10px;
+    font:bolder 14px verdana
+}
+.navegador{
+    text-align: left;
+    background: skyblue;
+    border:2px solid black;
+    margin: auto;
+}
+
+body{
+   
+    text-align: center;
+    margin-top: 100px;
+    background-image: url('x1-x5.jpg');
+    
+   
+}
+
+.grupo{
+    width: 960px;
+    height: 650px;
+    border: 3px solid black;
+    margin: auto;
+   
+    
+}
+hgroup{
+    text-align: left;
+    background-color: steelblue;
+    font: bolder 15px Arial;
+}
+p{
+    text-align: left;
+    background-color:#B0E0E6;
+    border: 2px solid black;
+}
+header{
+    background-color: steelblue;
+    font: bolder 20px Arial;
+}
+address{
+    background-color: steelblue;
+    border: 2px solid blue;
+}
