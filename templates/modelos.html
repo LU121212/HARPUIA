@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title >MEGAMAN</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="cristhian"/>
+  <meta name="keyword" content="zero,x,harpuia,fenrir"/>
+  <link rel="stylesheet" href="{{url_for('static',filename='hola.css')}}">
+  
+</head>
+<body>
+ <div class="grupo">
+  <header>MEGAMANBLOG</header>
+  <nav class="navegador">
+    <ul>
+        <li>
+          <a href="/">X</a>
+        </li>
+        <li>
+          <a href="/zero">ZERO</a>
+        </li>
+        <li>
+          <a href="/harpuia">HARPUIA</a>
+        </li>
+    </ul>
+  </nav>
+  
+  {% block content %} 
+  
+  {% endblock %}
+  <footer>
+    <hgroup>
+      Visite la pagina oficial 
+    </hgroup>
+    <address>
+      <a href="http://megaman.capcom.com/">CAPCOM</a>
+    </address>
+  </footer>
+ </div> 
+  
+    
+
+</body>
+</html>

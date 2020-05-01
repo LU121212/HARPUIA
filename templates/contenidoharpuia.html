@@ -1,28 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title >MEGAMAN</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="cristhian"/>
-  <meta name="keyword" content="zero,x,harpuia,fenrir"/>
-  <link href="C:\Users\user\Desktop\HTML13\MEGAMANZX\static\hola.css" rel="stylesheet" type="text/css">
-  
-</head>
-<body>
- <div class="grupo">
-  <header>MEGAMANBLOG</header>
-  <nav class="navegador">
-    <ul>
-        <li>X</li>
-        <li>Zero</li>
-        <li>Harpuia</li>
-    </ul>
-  </nav>
-  <section>
+{% extends "modelos.html" %}
+
+{% block content %}
+
+
+<section>
     <article>
       <hgroup>
-        <h1>ROCKMANX</h1>
+        <h1>HARPUIA</h1>
       </hgroup>
       <P>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, iste. Placeat ex totam eos ipsum voluptatu
@@ -47,24 +31,11 @@
     
   </section>
   <aside>
-    <img class="imagen" src="C:\Users\user\Desktop\HTML13\MEGAMANZX\static\x.jpg" width="300" height="200">
+    <img class="imagen" src="{{url_for('static',filename='270px-Harpuia.png')}}" width="300" height="200">
     <audio controls>
-      <source src="C:\Users\user\Desktop\HTML13\MEGAMANZX\templates1\Megaman X5 - Intro Stage (X).mp3" type="audio/mpeg">
+      <source src="{{url_for('static',filename='Mega Man Zero Collection OST - T2-25 Strong Will (Boss Theme).mp3')}}" type="audio/mpeg">
     </audio>
-
     <!--<img src="{{url_for('static', filename='Hermes.png')}}" -->
   </aside>
-  <footer>
-    <hgroup>
-      Visite la pagina oficial 
-    </hgroup>
-    <address>
-      <a href="http://megaman.capcom.com/">CAPCOM</a>
-    </address>
-  </footer>
- </div> 
-  
-    
 
-</body>
-</html>
+  {% endblock %}
